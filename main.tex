@@ -1,0 +1,40 @@
+\documentclass[a4paper, 11pt, overpass]{skillside-letter}
+% font sizes: 10pt, 11pt, or 12pt; 
+% paper sizes: a4paper
+% font families: sans or roman, overpass*
+% * requires font in directory and compilation with XeLaTex/LuaLaTex
+% see README in font directory
+
+\addstyle{aqua}
+
+% Your information:
+\ProvideAuthorName{Max Mustermann}
+\ProvideAuthorAddress{Musterstr. 10}{10119 Berlin}
+\ProvideAuthorEmail{max.mustermann@gmail.com}
+\ProvideAuthorPhone{\Plus49 030 1111 1111}
+
+
+\input{letters/example.tex}
+
+\begin{document}
+\maketitle
+\makesubject
+\maketext
+
+\par
+
+%.........................
+%
+% Signature:
+%__________________________
+\makesignature{Mit freundlichen Grüßen,}{signature}{width=4cm}
+% \makeignatureline{Mit freundlichen Grüßen,}{7cm}
+
+% Horizontal line:
+% \par
+% \dotline
+% \vspace{\baselineskip}
+% % Attachments: 
+% \textit{Attachments: CV, grades, certificate (2019), Id}
+
+\end{document}
